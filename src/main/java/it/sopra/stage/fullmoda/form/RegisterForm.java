@@ -24,4 +24,8 @@ public class RegisterForm {
 	
 	@AssertTrue
 	private boolean privacy;
+	
+	
+	
+	
 }
