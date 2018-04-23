@@ -11,7 +11,6 @@ public class SizeVariantProductData implements Serializable{
 	
 	private String code;
 	private SizeData size;
-	private ColorVariantProductData color;
 	
 	public SizeVariantProductData() {
 		
@@ -25,4 +24,8 @@ public class SizeVariantProductData implements Serializable{
 	public String toString() {
 		return "SizeVariantProductData [code=" + code + ", size=" + size + "]";
 	}
+
+	
+	
+	
 }

@@ -2,6 +2,7 @@ package it.sopra.stage.fullmoda.model;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,7 +29,7 @@ public class CartEntry implements Serializable {
 	@Column(name="idcart_entries")
 	private Long entryId;
 	
-	@ManyToOne
+	@ManyToOne (cascade=CascadeType.ALL)
 	@JoinColumn(name="cart_id")
 	private Cart cart;
 	
@@ -48,4 +49,7 @@ public class CartEntry implements Serializable {
 	public String toString() {
 		return "CartEntry [entryId=" + entryId + ", product=" + product + ", quantity=" + quantity + "]";
 	}
+	
+	
+	
 }

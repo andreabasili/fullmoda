@@ -45,7 +45,7 @@ public class ColorVariantProduct  implements Serializable{
 	@OneToMany(mappedBy="colorVariantProduct", cascade = CascadeType.ALL, fetch=FetchType.EAGER)
 	private List<SizeVariantProduct> sizeVariantProducts;
 	
-	public List<SizeVariantProduct> getColorVariantProducts() {
+	public List<SizeVariantProduct> getSizeVariantProducts() {
 		return sizeVariantProducts;
 	}
 	public void setSizeVariantProducts(List<SizeVariantProduct> sizeVariantProducts) {

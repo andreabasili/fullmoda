@@ -25,4 +25,6 @@ public class ColorData implements Serializable{
 	public String toString() {
 		return "ColorData [code=" + code + ", htmlCode=" + htmlCode + "]";
 	}
+	
+	
 }

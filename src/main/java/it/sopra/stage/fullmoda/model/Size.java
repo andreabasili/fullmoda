@@ -32,5 +32,9 @@ public class Size implements Serializable{
 	public Size(String code) {
 		this.code = code;
 	}
+
+
+	
+
 	
 }

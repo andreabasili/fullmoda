@@ -10,7 +10,6 @@ import it.sopra.stage.fullmoda.model.BaseProduct;
 public interface BaseProductRepository extends JpaRepository<BaseProduct, String> {
 	
 	BaseProduct findByCode(String code);
-	
 	List<BaseProduct> findByOnlineDateAfterAndOfflineDateBefore(Date onlineDate, Date offlineDate);
 	
 }
